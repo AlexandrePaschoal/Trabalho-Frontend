@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamada de Senhas</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Atendimento</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sistema de Atendimento</h1>
+    </header>
 
-<header>
-    <h1>Sistema de Atendimento</h1>
-</header>
-
-<main>
-    <div class="senha">
-
-        <div class="box">
+    <main>
+      <div class="conteudo">
+        <div class="senha">
+          <div class="box" id="btnNormal">
             <span class="titulo">Normal</span>
-            <h2 class="senha1">N000</h2>
-            <audio id="audioNormal" src="senha.mp3"></audio>
-        </div>
+            <h2 class="senha1 painel">N000</h2>
+            <audio id="audioNormal" src="Beep.mp3"></audio>
+          </div>
 
-        <div class="box">
+          <div class="box" id="btnPreferencial">
             <span class="titulo">Preferencial</span>
-            <h2 class="senha2">P000</h2>
-        </div>
+            <h2 class="senha2 painel">P000</h2>
+            <audio id="audioPreferencial" src="Beep.mp3"></audio>
+          </div>
 
-        <div class="box">
+          <div class="box" id="btnExame">
             <span class="titulo">Exame</span>
-            <h2 class="senha3">E000</h2>
+            <h2 class="senha3 painel">E000</h2>
+            <audio id="audioExame" src="Beep.mp3"></audio>
+          </div>
         </div>
 
-    </div>
-</main>
-<footer>
-    <p>UNINASSAU - 2025</p>
-</footer>
+        <div class="historico">
+          <h3>Histórico de Chamadas</h3>
+          <ul id="listaHistorico"></ul>
+        </div>
+      </div>
+    </main>
 
-<script src="script.js"></script>
+    <footer>
+      <p>UNINASSAU - 2025</p>
+    </footer>
 
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
