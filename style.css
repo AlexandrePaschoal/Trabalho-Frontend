@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+
+header {
+    height: 90px;
+    background: #2D6CDF;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    padding: 0 25px;
+}
+
+header h1::before,
+header h1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 3px;
+    background: rgba(255,255,255,0.5);
+}
+
+header h1::before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+header h1::after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+
+
+body {
+    background: #F5F5F7;
+}
+
+
+main {
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.senha {
+    display: flex;
+    gap: 25px;
+    padding: 35px 50px;
+    background: #ffffff;
+    border-radius: 22px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #1F1F1F;
+    margin-bottom: 10px;
+}
+
+
+
+.senha1, .senha2, .senha3 {
+    background: #1E1E1E;
+    color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 18px;
+    font-size: 4.5rem;
+    font-weight: 600;
+    min-width: 170px;
+    text-align: center;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+.senha1 { background: #2D9CDB; } 
+.senha2 { background: #27AE60; } 
+.senha3 { background: #EB5757; } 
+
+footer {
+    height: 70px;                      
+    background: #2D6CDF;               
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .senha {
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .senha1, .senha2, .senha3 {
+        font-size: 3rem;
+        min-width: unset;
+        width: 100%;
+    }
+}
