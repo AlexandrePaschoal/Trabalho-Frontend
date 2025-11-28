@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Sistema de Atendimento</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -13,37 +13,47 @@
 
     <main>
       <div class="conteudo">
-        <div class="senha">
-          <div class="box" id="btnNormal">
-            <span class="titulo">Normal</span>
-            <h2 class="senha1 painel">N000</h2>
-            <audio id="audioNormal" src="Beep.mp3"></audio>
+
+        <!-- PAINEL PRINCIPAL -->
+        <div class="painel-principal">
+          <div class="painel-titulo">Atendimento</div>
+          <div id="painelSenha" class="painel-senha">-- --</div>
+          <audio id="audioChamada" src="Beep.mp3"></audio>
+        </div>
+
+        <!-- ÁREA DE BOTÕES (EMISSÃO) -->
+        <div class="acao">
+          <div class="senha">
+            <div class="box" id="btnSP" title= "Prioridade">
+              <span class="titulo">Prioridade</span>
+              <h2 class="senha1" id="mostraSP">-- --</h2>
+            </div>
+
+            <div class="box" id="btnSE" title= "Exame">
+              <span class="titulo">Exame</span>
+              <h2 class="senha2" id="mostraSE">-- --</h2>
+            </div>
+
+            <div class="box" id="btnSG" title= "Geral">
+              <span class="titulo">Geral</span>
+              <h2 class="senha3" id="mostraSG">-- --</h2>
+            </div>
           </div>
 
-          <div class="box" id="btnPreferencial">
-            <span class="titulo">Preferencial</span>
-            <h2 class="senha2 painel">P000</h2>
-            <audio id="audioPreferencial" src="Beep.mp3"></audio>
-          </div>
-
-          <div class="box" id="btnExame">
-            <span class="titulo">Exame</span>
-            <h2 class="senha3 painel">E000</h2>
-            <audio id="audioExame" src="Beep.mp3"></audio>
+          <div class="controles">
+            <button id="btnChamar" class="btn-primario" title="Chamar próxima senha">Chamar Próximo</button>
+            <button id="btnLimpar" class="btn-secundario" title="Resetar o sistema">Reset</button>
           </div>
         </div>
 
+        <!-- HISTÓRICO (últimas 5) -->
         <div class="historico">
-          <h3>Histórico de Chamadas</h3>
+          <h3>Histórico de Senhas</h3>
           <ul id="listaHistorico"></ul>
         </div>
+
       </div>
     </main>
-
-    <footer>
-      <p>UNINASSAU - 2025</p>
-    </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
