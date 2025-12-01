@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Sistema de Atendimento</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -13,7 +19,6 @@
 
     <main>
       <div class="conteudo">
-
         <!-- PAINEL PRINCIPAL -->
         <div class="painel-principal">
           <div class="painel-titulo">Atendimento</div>
@@ -24,25 +29,37 @@
         <!-- ÁREA DE BOTÕES (EMISSÃO) -->
         <div class="acao">
           <div class="senha">
-            <div class="box" id="btnSP" title= "Prioridade">
+            <div class="box" id="btnSP" title="Prioridade">
               <span class="titulo">Prioridade</span>
               <h2 class="senha1" id="mostraSP">-- --</h2>
             </div>
 
-            <div class="box" id="btnSE" title= "Exame">
+            <div class="box" id="btnSE" title="Exame">
               <span class="titulo">Exame</span>
               <h2 class="senha2" id="mostraSE">-- --</h2>
             </div>
 
-            <div class="box" id="btnSG" title= "Geral">
+            <div class="box" id="btnSG" title="Geral">
               <span class="titulo">Geral</span>
               <h2 class="senha3" id="mostraSG">-- --</h2>
             </div>
           </div>
 
           <div class="controles">
-            <button id="btnChamar" class="btn-primario" title="Chamar próxima senha">Chamar Próximo</button>
-            <button id="btnLimpar" class="btn-secundario" title="Resetar o sistema">Reset</button>
+            <button
+              id="btnChamar"
+              class="btn-primario"
+              title="Chamar próxima senha"
+            >
+              Chamar Próximo
+            </button>
+            <button
+              id="btnLimpar"
+              class="btn-secundario"
+              title="Resetar o sistema"
+            >
+              Reset
+            </button>
           </div>
         </div>
 
@@ -51,7 +68,6 @@
           <h3>Histórico de Senhas</h3>
           <ul id="listaHistorico"></ul>
         </div>
-
       </div>
     </main>
     <script src="script.js"></script>
