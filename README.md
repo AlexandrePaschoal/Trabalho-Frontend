@@ -2,6 +2,10 @@
 
 ###
 
+<h3 align="left">Alunos:</h3>
+<p align="left">- Alexandre Paschoal Teles de Andrade - 01780463<br>- Beatriz Kathleen Marques Silva - 01861292<br>- Geovanny Marecelino da Silva - 01731076<br>- Lucas Vinícius Moura Correia e Silva - 01780372<br>- Thiago Henrique de Andrade Silva - 01764230
+</p>
+
 <h3 align="left">📘 Sobre o Projeto</h3>
 
 ###
